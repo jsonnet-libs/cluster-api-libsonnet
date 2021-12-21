@@ -2,4 +2,4 @@
 
 This library is generated with [`k8s`](https://github.com/jsonnet-libs/k8s).
 
-[Docs](https://jsonnet-libs.github.io/cluster-api-libsonnet)
+- [v1.0.2](v1.0.2/README.md)
