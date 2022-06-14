@@ -22,8 +22,6 @@ permalink: /v1.0.2/cluster/v1alpha4/clusterClass/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -67,6 +65,32 @@ permalink: /v1.0.2/cluster/v1alpha4/clusterClass/
   * [`obj spec.workers`](#obj-specworkers)
     * [`fn withMachineDeployments(machineDeployments)`](#fn-specworkerswithmachinedeployments)
     * [`fn withMachineDeploymentsMixin(machineDeployments)`](#fn-specworkerswithmachinedeploymentsmixin)
+    * [`obj spec.workers.machineDeployments`](#obj-specworkersmachinedeployments)
+      * [`fn withClass(class)`](#fn-specworkersmachinedeploymentswithclass)
+      * [`obj spec.workers.machineDeployments.template`](#obj-specworkersmachinedeploymentstemplate)
+        * [`obj spec.workers.machineDeployments.template.bootstrap`](#obj-specworkersmachinedeploymentstemplatebootstrap)
+          * [`obj spec.workers.machineDeployments.template.bootstrap.ref`](#obj-specworkersmachinedeploymentstemplatebootstrapref)
+            * [`fn withApiVersion(apiVersion)`](#fn-specworkersmachinedeploymentstemplatebootstraprefwithapiversion)
+            * [`fn withFieldPath(fieldPath)`](#fn-specworkersmachinedeploymentstemplatebootstraprefwithfieldpath)
+            * [`fn withKind(kind)`](#fn-specworkersmachinedeploymentstemplatebootstraprefwithkind)
+            * [`fn withName(name)`](#fn-specworkersmachinedeploymentstemplatebootstraprefwithname)
+            * [`fn withNamespace(namespace)`](#fn-specworkersmachinedeploymentstemplatebootstraprefwithnamespace)
+            * [`fn withResourceVersion(resourceVersion)`](#fn-specworkersmachinedeploymentstemplatebootstraprefwithresourceversion)
+            * [`fn withUid(uid)`](#fn-specworkersmachinedeploymentstemplatebootstraprefwithuid)
+        * [`obj spec.workers.machineDeployments.template.infrastructure`](#obj-specworkersmachinedeploymentstemplateinfrastructure)
+          * [`obj spec.workers.machineDeployments.template.infrastructure.ref`](#obj-specworkersmachinedeploymentstemplateinfrastructureref)
+            * [`fn withApiVersion(apiVersion)`](#fn-specworkersmachinedeploymentstemplateinfrastructurerefwithapiversion)
+            * [`fn withFieldPath(fieldPath)`](#fn-specworkersmachinedeploymentstemplateinfrastructurerefwithfieldpath)
+            * [`fn withKind(kind)`](#fn-specworkersmachinedeploymentstemplateinfrastructurerefwithkind)
+            * [`fn withName(name)`](#fn-specworkersmachinedeploymentstemplateinfrastructurerefwithname)
+            * [`fn withNamespace(namespace)`](#fn-specworkersmachinedeploymentstemplateinfrastructurerefwithnamespace)
+            * [`fn withResourceVersion(resourceVersion)`](#fn-specworkersmachinedeploymentstemplateinfrastructurerefwithresourceversion)
+            * [`fn withUid(uid)`](#fn-specworkersmachinedeploymentstemplateinfrastructurerefwithuid)
+        * [`obj spec.workers.machineDeployments.template.metadata`](#obj-specworkersmachinedeploymentstemplatemetadata)
+          * [`fn withAnnotations(annotations)`](#fn-specworkersmachinedeploymentstemplatemetadatawithannotations)
+          * [`fn withAnnotationsMixin(annotations)`](#fn-specworkersmachinedeploymentstemplatemetadatawithannotationsmixin)
+          * [`fn withLabels(labels)`](#fn-specworkersmachinedeploymentstemplatemetadatawithlabels)
+          * [`fn withLabelsMixin(labels)`](#fn-specworkersmachinedeploymentstemplatemetadatawithlabelsmixin)
 
 ## Fields
 
@@ -181,24 +205,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -515,5 +521,189 @@ withMachineDeploymentsMixin(machineDeployments)
 ```
 
 "MachineDeployments is a list of machine deployment classes that can be used to create a set of worker nodes."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.workers.machineDeployments
+
+"MachineDeployments is a list of machine deployment classes that can be used to create a set of worker nodes."
+
+### fn spec.workers.machineDeployments.withClass
+
+```ts
+withClass(class)
+```
+
+"Class denotes a type of worker node present in the cluster, this name MUST be unique within a ClusterClass and can be referenced in the Cluster to create a managed MachineDeployment."
+
+## obj spec.workers.machineDeployments.template
+
+"Template is a local struct containing a collection of templates for creation of MachineDeployment objects representing a set of worker nodes."
+
+## obj spec.workers.machineDeployments.template.bootstrap
+
+"Bootstrap contains the bootstrap template reference to be used for the creation of worker Machines."
+
+## obj spec.workers.machineDeployments.template.bootstrap.ref
+
+"Ref is a required reference to a custom resource offered by a provider."
+
+### fn spec.workers.machineDeployments.template.bootstrap.ref.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.workers.machineDeployments.template.bootstrap.ref.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.workers.machineDeployments.template.bootstrap.ref.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.workers.machineDeployments.template.bootstrap.ref.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.workers.machineDeployments.template.bootstrap.ref.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.workers.machineDeployments.template.bootstrap.ref.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.workers.machineDeployments.template.bootstrap.ref.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
+
+## obj spec.workers.machineDeployments.template.infrastructure
+
+"Infrastructure contains the infrastructure template reference to be used for the creation of worker Machines."
+
+## obj spec.workers.machineDeployments.template.infrastructure.ref
+
+"Ref is a required reference to a custom resource offered by a provider."
+
+### fn spec.workers.machineDeployments.template.infrastructure.ref.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.workers.machineDeployments.template.infrastructure.ref.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.workers.machineDeployments.template.infrastructure.ref.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.workers.machineDeployments.template.infrastructure.ref.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.workers.machineDeployments.template.infrastructure.ref.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.workers.machineDeployments.template.infrastructure.ref.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.workers.machineDeployments.template.infrastructure.ref.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
+
+## obj spec.workers.machineDeployments.template.metadata
+
+"Metadata is the metadata applied to the machines of the MachineDeployment. At runtime this metadata is merged with the corresponding metadata from the topology."
+
+### fn spec.workers.machineDeployments.template.metadata.withAnnotations
+
+```ts
+withAnnotations(annotations)
+```
+
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
+
+### fn spec.workers.machineDeployments.template.metadata.withAnnotationsMixin
+
+```ts
+withAnnotationsMixin(annotations)
+```
+
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workers.machineDeployments.template.metadata.withLabels
+
+```ts
+withLabels(labels)
+```
+
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
+
+### fn spec.workers.machineDeployments.template.metadata.withLabelsMixin
+
+```ts
+withLabelsMixin(labels)
+```
+
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 **Note:** This function appends passed data to existing values

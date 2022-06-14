@@ -22,8 +22,6 @@ permalink: /v1.0.2/addons/v1alpha3/clusterResourceSetBinding/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -34,6 +32,16 @@ permalink: /v1.0.2/addons/v1alpha3/clusterResourceSetBinding/
 * [`obj spec`](#obj-spec)
   * [`fn withBindings(bindings)`](#fn-specwithbindings)
   * [`fn withBindingsMixin(bindings)`](#fn-specwithbindingsmixin)
+  * [`obj spec.bindings`](#obj-specbindings)
+    * [`fn withClusterResourceSetName(clusterResourceSetName)`](#fn-specbindingswithclusterresourcesetname)
+    * [`fn withResources(resources)`](#fn-specbindingswithresources)
+    * [`fn withResourcesMixin(resources)`](#fn-specbindingswithresourcesmixin)
+    * [`obj spec.bindings.resources`](#obj-specbindingsresources)
+      * [`fn withApplied(applied)`](#fn-specbindingsresourceswithapplied)
+      * [`fn withHash(hash)`](#fn-specbindingsresourceswithhash)
+      * [`fn withKind(kind)`](#fn-specbindingsresourceswithkind)
+      * [`fn withLastAppliedTime(lastAppliedTime)`](#fn-specbindingsresourceswithlastappliedtime)
+      * [`fn withName(name)`](#fn-specbindingsresourceswithname)
 
 ## Fields
 
@@ -151,24 +159,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -248,3 +238,77 @@ withBindingsMixin(bindings)
 "Bindings is a list of ClusterResourceSets and their resources."
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.bindings
+
+"Bindings is a list of ClusterResourceSets and their resources."
+
+### fn spec.bindings.withClusterResourceSetName
+
+```ts
+withClusterResourceSetName(clusterResourceSetName)
+```
+
+"ClusterResourceSetName is the name of the ClusterResourceSet that is applied to the owner cluster of the binding."
+
+### fn spec.bindings.withResources
+
+```ts
+withResources(resources)
+```
+
+"Resources is a list of resources that the ClusterResourceSet has."
+
+### fn spec.bindings.withResourcesMixin
+
+```ts
+withResourcesMixin(resources)
+```
+
+"Resources is a list of resources that the ClusterResourceSet has."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.bindings.resources
+
+"Resources is a list of resources that the ClusterResourceSet has."
+
+### fn spec.bindings.resources.withApplied
+
+```ts
+withApplied(applied)
+```
+
+"Applied is to track if a resource is applied to the cluster or not."
+
+### fn spec.bindings.resources.withHash
+
+```ts
+withHash(hash)
+```
+
+"Hash is the hash of a resource's data. This can be used to decide if a resource is changed. For \"ApplyOnce\" ClusterResourceSet.spec.strategy, this is no-op as that strategy does not act on change."
+
+### fn spec.bindings.resources.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the resource. Supported kinds are: Secrets and ConfigMaps."
+
+### fn spec.bindings.resources.withLastAppliedTime
+
+```ts
+withLastAppliedTime(lastAppliedTime)
+```
+
+"LastAppliedTime identifies when this resource was last applied to the cluster."
+
+### fn spec.bindings.resources.withName
+
+```ts
+withName(name)
+```
+
+"Name of the resource that is in the same namespace with ClusterResourceSet object."

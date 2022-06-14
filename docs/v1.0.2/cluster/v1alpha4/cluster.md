@@ -22,8 +22,6 @@ permalink: /v1.0.2/cluster/v1alpha4/cluster/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -75,6 +73,15 @@ permalink: /v1.0.2/cluster/v1alpha4/cluster/
     * [`obj spec.topology.workers`](#obj-spectopologyworkers)
       * [`fn withMachineDeployments(machineDeployments)`](#fn-spectopologyworkerswithmachinedeployments)
       * [`fn withMachineDeploymentsMixin(machineDeployments)`](#fn-spectopologyworkerswithmachinedeploymentsmixin)
+      * [`obj spec.topology.workers.machineDeployments`](#obj-spectopologyworkersmachinedeployments)
+        * [`fn withClass(class)`](#fn-spectopologyworkersmachinedeploymentswithclass)
+        * [`fn withName(name)`](#fn-spectopologyworkersmachinedeploymentswithname)
+        * [`fn withReplicas(replicas)`](#fn-spectopologyworkersmachinedeploymentswithreplicas)
+        * [`obj spec.topology.workers.machineDeployments.metadata`](#obj-spectopologyworkersmachinedeploymentsmetadata)
+          * [`fn withAnnotations(annotations)`](#fn-spectopologyworkersmachinedeploymentsmetadatawithannotations)
+          * [`fn withAnnotationsMixin(annotations)`](#fn-spectopologyworkersmachinedeploymentsmetadatawithannotationsmixin)
+          * [`fn withLabels(labels)`](#fn-spectopologyworkersmachinedeploymentsmetadatawithlabels)
+          * [`fn withLabelsMixin(labels)`](#fn-spectopologyworkersmachinedeploymentsmetadatawithlabelsmixin)
 
 ## Fields
 
@@ -189,24 +196,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -583,5 +572,73 @@ withMachineDeploymentsMixin(machineDeployments)
 ```
 
 "MachineDeployments is a list of machine deployments in the cluster."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.topology.workers.machineDeployments
+
+"MachineDeployments is a list of machine deployments in the cluster."
+
+### fn spec.topology.workers.machineDeployments.withClass
+
+```ts
+withClass(class)
+```
+
+"Class is the name of the MachineDeploymentClass used to create the set of worker nodes. This should match one of the deployment classes defined in the ClusterClass object mentioned in the `Cluster.Spec.Class` field."
+
+### fn spec.topology.workers.machineDeployments.withName
+
+```ts
+withName(name)
+```
+
+"Name is the unique identifier for this MachineDeploymentTopology. The value is used with other unique identifiers to create a MachineDeployment's Name (e.g. cluster's name, etc). In case the name is greater than the allowed maximum length, the values are hashed together."
+
+### fn spec.topology.workers.machineDeployments.withReplicas
+
+```ts
+withReplicas(replicas)
+```
+
+"Replicas is the number of worker nodes belonging to this set. If the value is nil, the MachineDeployment is created without the number of Replicas (defaulting to zero) and it's assumed that an external entity (like cluster autoscaler) is responsible for the management of this value."
+
+## obj spec.topology.workers.machineDeployments.metadata
+
+"Metadata is the metadata applied to the machines of the MachineDeployment. At runtime this metadata is merged with the corresponding metadata from the ClusterClass."
+
+### fn spec.topology.workers.machineDeployments.metadata.withAnnotations
+
+```ts
+withAnnotations(annotations)
+```
+
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
+
+### fn spec.topology.workers.machineDeployments.metadata.withAnnotationsMixin
+
+```ts
+withAnnotationsMixin(annotations)
+```
+
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.topology.workers.machineDeployments.metadata.withLabels
+
+```ts
+withLabels(labels)
+```
+
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
+
+### fn spec.topology.workers.machineDeployments.metadata.withLabelsMixin
+
+```ts
+withLabelsMixin(labels)
+```
+
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 **Note:** This function appends passed data to existing values
