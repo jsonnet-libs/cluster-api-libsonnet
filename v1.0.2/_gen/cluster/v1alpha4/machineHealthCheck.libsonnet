@@ -90,8 +90,6 @@
     },
     '#unhealthyConditions':: d.obj(help='"UnhealthyConditions contains a list of the conditions that determine whether a node is considered unhealthy.  The conditions are combined in a logical OR, i.e. if any of the conditions is met, the node is unhealthy."'),
     unhealthyConditions: {
-      '#withStatus':: d.fn(help='', args=[d.arg(name='status', type=d.T.string)]),
-      withStatus(status): { status: status },
       '#withTimeout':: d.fn(help='', args=[d.arg(name='timeout', type=d.T.string)]),
       withTimeout(timeout): { timeout: timeout },
       '#withType':: d.fn(help='', args=[d.arg(name='type', type=d.T.string)]),
