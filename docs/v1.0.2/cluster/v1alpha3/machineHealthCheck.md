@@ -54,6 +54,7 @@ permalink: /v1.0.2/cluster/v1alpha3/machineHealthCheck/
       * [`fn withValues(values)`](#fn-specselectormatchexpressionswithvalues)
       * [`fn withValuesMixin(values)`](#fn-specselectormatchexpressionswithvaluesmixin)
   * [`obj spec.unhealthyConditions`](#obj-specunhealthyconditions)
+    * [`fn withStatus(status)`](#fn-specunhealthyconditionswithstatus)
     * [`fn withTimeout(timeout)`](#fn-specunhealthyconditionswithtimeout)
     * [`fn withType(type)`](#fn-specunhealthyconditionswithtype)
 
@@ -418,6 +419,14 @@ withValuesMixin(values)
 ## obj spec.unhealthyConditions
 
 "UnhealthyConditions contains a list of the conditions that determine whether a node is considered unhealthy.  The conditions are combined in a logical OR, i.e. if any of the conditions is met, the node is unhealthy."
+
+### fn spec.unhealthyConditions.withStatus
+
+```ts
+withStatus(status)
+```
+
+
 
 ### fn spec.unhealthyConditions.withTimeout
 
