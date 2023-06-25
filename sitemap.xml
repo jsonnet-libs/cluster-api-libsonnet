@@ -2,182 +2,182 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/addons/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/addons/v1alpha3/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/addons/v1alpha3/clusterResourceSet/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/addons/v1alpha3/clusterResourceSetBinding/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/addons/v1alpha4/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/addons/v1alpha4/clusterResourceSet/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/addons/v1alpha4/clusterResourceSetBinding/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/addons/v1beta1/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/addons/v1beta1/clusterResourceSet/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/addons/v1beta1/clusterResourceSetBinding/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha3/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha3/cluster/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha3/machine/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha3/machineDeployment/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha3/machineHealthCheck/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha3/machinePool/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha3/machineSet/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha4/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha4/cluster/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha4/clusterClass/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha4/machine/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha4/machineDeployment/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha4/machineHealthCheck/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha4/machinePool/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1alpha4/machineSet/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1beta1/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1beta1/cluster/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1beta1/clusterClass/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1beta1/machine/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1beta1/machineDeployment/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1beta1/machineHealthCheck/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1beta1/machinePool/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cluster-api-libsonnet/v1.0.2/cluster/v1beta1/machineSet/</loc>
-         <lastmod>2023-04-30</lastmod>
+         <lastmod>2023-06-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
